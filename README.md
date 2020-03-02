@@ -1,10 +1,10 @@
-# Async Priority Queue
+# Priority Queue
 
 Simple and fast priority queue that uses promise based of while iteration and not blocking the main thread.
 
 >
 
-[![NPM](https://img.shields.io/npm/v/react-d3-tree-editor.svg)](https://www.npmjs.com/package/async-priority-queue) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-d3-tree-editor.svg)](https://www.npmjs.com/package/simple-priority-queue) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Contents <!-- omit in toc -->
 
@@ -14,13 +14,13 @@ Simple and fast priority queue that uses promise based of while iteration and no
 ## Install
 
 ```bash
-npm i --save async-priority-queue
+npm i --save simple-priority-queue
 ```
 
 ## Basic Usage
 
 ```ts
-import { PriorityQueue } from 'PriorityQueue';
+const { PriorityQueue } = require('simple-priority-queue');
 
 const myQueue = new PriorityQueue(true); //true for maxheap, default is minheap
 // enqueue recive 2 params nodeData: any object , nodePriority: priority of data
@@ -37,4 +37,4 @@ const mySortedArray = await myQueue.heapSort();
 
 ## License
 
-MIT © [https://github.com/Naihan/async-priority-queue](https://github.com/Naihan/async-priority-queue)
+MIT © [https://github.com/Naihan/simple-priority-queue](https://github.com/Naihan/simple-priority-queue)
