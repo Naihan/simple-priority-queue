@@ -24,12 +24,12 @@ const { PriorityQueue } = require('simple-priority-queue');
 
 const myQueue = new PriorityQueue(true); //true for maxheap, default is minheap
 // enqueue recive 2 params nodeData: any object , nodePriority: priority of data
-myQueue.enqueue({ myCoolData: 'MyCoolValue' }, 1);
-myQueue.enqueue({ myCoolData: 'MyCoolValue' }, 2);
-myQueue.enqueue({ myCoolData: 'MyCoolValue' }, 3);
-myQueue.enqueue({ myCoolData: 'MyCoolValue' }, 4);
+myQueue.insert({ myCoolData: 'MyCoolValue' }, 1);
+myQueue.insert({ myCoolData: 'MyCoolValue' }, 2);
+myQueue.insert({ myCoolData: 'MyCoolValue' }, 3);
+myQueue.insert({ myCoolData: 'MyCoolValue' }, 4);
 // dequeue by order of the priority
-const value = myQueue.dequeue();
+const value = myQueue.poll();
 
 // sort the data (will remove the content of queue)
 const mySortedArray = await myQueue.heapSort();
